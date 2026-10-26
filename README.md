@@ -1,27 +1,30 @@
 # Customer Churn Analysis and Prediction
 
 ## Project Overview
-This project predicts whether a customer is likely to leave a service (churn) using Machine Learning. A Streamlit web application allows users to enter customer details and receive a churn prediction.
+This project uses Machine Learning to predict whether a customer is likely to leave a service (churn). It includes a Streamlit web application where users can enter customer details and receive a churn prediction.
 
 ## Objectives
 - Analyze customer information related to churn.
 - Preprocess customer data for Machine Learning.
 - Train and evaluate classification models.
 - Build an interactive web application using Streamlit.
+- Demonstrate a trained model through a user-friendly interface.
 
 ## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- Joblib
+- **Python** – Core programming language
+- **Pandas** – Data manipulation and analysis
+- **NumPy** – Numerical computations
+- **Scikit-learn** – Machine Learning preprocessing and prediction
+- **Streamlit** – Interactive web application
+- **Joblib** – Loading saved model-related files
+- **Jupyter Notebook** – Data analysis and model development
 
 ## Features
 - Accepts customer age, gender, tenure, and monthly charges.
 - Applies the saved scaler to input data.
-- Uses a trained Machine Learning model to predict churn.
-- Displays the prediction through a simple web interface.
+- Uses a trained Machine Learning model to predict customer churn.
+- Displays the prediction through an interactive web interface.
+- Provides a simple interface for testing customer details.
 
 ## Input Features
 - Age
@@ -29,38 +32,56 @@ This project predicts whether a customer is likely to leave a service (churn) us
 - Tenure
 - Monthly Charges
 
-## Project Structure
-```text
-Customer-Churn-Analysis-Prediction/
-├── app.py
-├── model.pkl
-├── scaler.pkl
-├── requirements.txt
-└── README.md
-```
-
 ## Application Screenshot
 
 ![Customer Churn Prediction App](screensshoots/Screenshot.jpg)
 
+## Project Structure
+
+```text
+Customer-Churn-Analysis-Prediction/
+├── app.py
+├── customer_churn_dataset.csv
+├── model.pkl
+├── scaler.pkl
+├── notebook.ipynb
+├── requirements.txt
+├── README.md
+└── screensshoots/
+    └── Screenshot.jpg
+```
+
+*Note: The dataset filename shown above is an example. Replace it with the exact filename in your repository if it differs.*
 
 ## How to Run the Project
 
-1. Clone or download this repository.
-2. Install the required libraries:
+### 1. Clone the Repository
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/varshitharodda/Customer-Churn-Analysis-Prediction.git
+cd Customer-Churn-Analysis-Prediction
+```
 
-3. Run the Streamlit application:
+### 2. Install Dependencies
 
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+py -m pip install -r requirements.txt
+```
 
-4. Open the local URL displayed in the terminal.
+### 3. Run the Streamlit Application
 
-## Note
-The application requires the trained model (`model.pkl`) and scaler (`scaler.pkl`) files to be available in the project directory.
+```bash
+py -m streamlit run app.py
+```
 
+### 4. Open the Application
+
+Open the local URL displayed in the terminal to access the application in your browser.
+
+## Model and Scaler Files
+The application requires `model.pkl` and `scaler.pkl` in the project directory. These files contain the saved model and scaler used by the application.
+
+## Future Enhancements
+- Add more customer features to improve prediction capabilities.
+- Display model evaluation metrics.
+- Improve the user interface and prediction insights.
