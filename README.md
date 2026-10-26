@@ -39,6 +39,11 @@ Customer-Churn-Analysis-Prediction/
 └── README.md
 ```
 
+## Application Screenshot
+
+![Customer Churn Prediction App](screensshoots/Screenshot.jpg)
+
+
 ## How to Run the Project
 
 1. Clone or download this repository.
